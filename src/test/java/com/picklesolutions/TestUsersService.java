@@ -18,6 +18,6 @@ public class TestUsersService {
 
         UsersService service = new UsersService();
 
-        assertEquals(true, service.authenticateUser("nikiv", "nikipass"));
+        assertEquals(true, service.authenticateUser("admin", "adminpass"));
     }
 }
