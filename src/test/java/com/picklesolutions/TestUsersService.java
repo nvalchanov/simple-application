@@ -12,4 +12,12 @@ public class TestUsersService {
 
         assertEquals(10, service.count());
     }
+
+    @Test
+    public void testAuthentication() {
+
+        UsersService service = new UsersService();
+
+        assertEquals(true, service.authenticateUser("admin", "adminpass"));
+    }
 }
